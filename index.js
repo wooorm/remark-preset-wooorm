@@ -1,14 +1,5 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module remark-preset-wooorm
- * @fileoverview Personal prose style.
- */
-
 'use strict';
 
-/* Expose. */
 module.exports = {
   presets: ['lint-recommended'],
   settings: {
@@ -19,7 +10,7 @@ module.exports = {
     './prose-retext.js': null,
     'comment-config': null,
     'validate-links': null,
-    'lint': {
+    lint: {
       blockquoteIndentation: 2,
       checkboxCharacterStyle: {checked: 'x', unchecked: ' '},
       checkboxContentIndent: true,
@@ -61,10 +52,10 @@ module.exports = {
       tablePipes: true,
       unorderedListMarkerStyle: '*'
     },
-    'toc': {
+    toc: {
       maxDepth: 3,
       tight: true
     },
-    'github': null
+    github: null
   }
 };
