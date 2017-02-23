@@ -11,8 +11,8 @@ var contractions = require('retext-contractions');
 
 module.exports = attacher;
 
-function attacher(processor) {
-  processor.use(remark2retext, unified()
+function attacher() {
+  this.use(remark2retext, unified()
     .use(english)
     .use(sentenceSpacing, {preferred: 2})
     .use(quotes, {preferred: 'smart'})
