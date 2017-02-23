@@ -13,7 +13,7 @@
     "index.js"
   ],
   "dependencies": {
-    "remark-comment-config": "^4.0.1",
+    "remark-comment-config": "^5.0.0",
     "remark-github": "^6.0.0",
     "remark-lint": "^5.0.0",
     "remark-preset-lint-recommended": "^1.0.0",
