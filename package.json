@@ -23,7 +23,7 @@
     "retext-contractions": "^1.0.1",
     "retext-english": "^2.0.0",
     "retext-indefinite-article": "^1.0.0",
-    "retext-quotes": "^1.0.0",
+    "retext-quotes": "^2.0.0",
     "retext-repeated-words": "^1.0.0",
     "retext-sentence-spacing": "^1.0.0",
     "unified": "^5.0.0"
