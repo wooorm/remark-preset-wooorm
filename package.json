@@ -21,7 +21,7 @@
     "remark-toc": "^3.1.0",
     "remark-validate-links": "^5.0.0",
     "retext-contractions": "^1.0.1",
-    "retext-english": "^2.0.0",
+    "retext-english": "^3.0.0",
     "retext-indefinite-article": "^1.0.0",
     "retext-quotes": "^1.0.0",
     "retext-repeated-words": "^1.0.0",
