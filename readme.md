@@ -18,7 +18,9 @@ Now add the following to your `package.json`:
     "test": "npm run build-md && ..."
   },
   "remarkConfig": {
-    "preset": "wooorm"
+    "plugins": [
+      "preset-wooorm"
+    ]
   },
 ```
 
