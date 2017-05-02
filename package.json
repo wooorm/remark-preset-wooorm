@@ -75,7 +75,7 @@
   ],
   "devDependencies": {
     "remark-cli": "^3.0.0",
-    "xo": "^0.17.1"
+    "xo": "^0.18.1"
   },
   "scripts": {
     "build-md": "remark . -qfo",
@@ -83,7 +83,8 @@
     "test": "npm run build-md && npm run lint"
   },
   "xo": {
-    "space": true
+    "space": true,
+    "esnext": false
   },
   "remarkConfig": {
     "plugins": [
