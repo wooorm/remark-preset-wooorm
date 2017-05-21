@@ -1,12 +1,16 @@
 'use strict';
 
+var unified = require('unified');
+var english = require('retext-english');
+var preset = require('retext-preset-wooorm');
+
 exports.settings = {
   bullet: '*',
   fences: true
 };
 
 exports.plugins = [
-  require('./prose-retext'),
+  [require('remark-retext'), unified().use(english).use(preset)],
   require('remark-preset-lint-recommended'),
   require('remark-comment-config'),
   require('remark-validate-links'),

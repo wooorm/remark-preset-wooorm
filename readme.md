@@ -1,6 +1,8 @@
 # remark-preset-wooorm [![Build Status][travis-badge]][travis]
 
-:tada: My personal markdown and prose style.
+My personal markdown (and prose) style.
+
+[Learn more about presets in unified’s docs][docs].
 
 ## Installation
 
@@ -48,10 +50,15 @@ npm test
 
 ###### Natural Language
 
+See [`retext-preset-wooorm`][retext-preset] for more info.
+
+*   [English][] parsing;
 *   Two [spaces][] between sentences;
 *   Checks [“indefinite articles”][articles]: “a” or “an”;
 *   Checks [quotes and apostrophes][quotes] (`""` > `“”`);
 *   Checks accidental [repeated words][repeated];
+*   Checks [diacritics][];
+*   Checks [redundant acronyms][ras];
 *   Checks incorrectly placed apostrophes in [contractions][].
 
 ## License
@@ -80,6 +87,10 @@ npm test
 
 [comments]: https://github.com/wooorm/remark-comment-config
 
+[retext-preset]: https://github.com/wooorm/retext-preset-wooorm
+
+[english]: https://github.com/wooorm/retext/tree/master/packages/retext-english
+
 [spaces]: https://github.com/wooorm/retext-sentence-spacing
 
 [articles]: https://github.com/wooorm/retext-indefinite-article
@@ -89,3 +100,9 @@ npm test
 [repeated]: https://github.com/wooorm/retext-repeated-words
 
 [contractions]: https://github.com/wooorm/retext-contractions
+
+[diacritics]: https://github.com/wooorm/retext-diacritics
+
+[ras]: https://github.com/wooorm/retext-redundant-acronyms
+
+[docs]: https://github.com/unifiedjs/unified#preset
