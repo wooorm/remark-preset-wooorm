@@ -37,29 +37,29 @@ npm test
 ###### Markdown
 
 *   Extends [`remark-preset-lint-recommended`][lint-recommended],
-    and adds a strict code-style (see [`index.js`][index]);
-*   Checks [broken local links][validate-links];
+    and adds a strict code-style (see [`index.js`][index])
+*   Checks [broken local links][validate-links]
 *   Markdown is compiled with asterisk list-item bullets (`*`),
     and fenced code blocks (note: set `output: true` in your config to
-    benefit from this);
-*   How remark compiles can be configured inline with [comments][];
+    benefit from this)
+*   How remark compiles can be configured inline with [comments][]
 *   `Table of Contents` headers are kept up to date, with a depth of `3`
-    (if `output: true`);
+    (if `output: true`)
 *   [GH references][github], like mentions or issue references, are
-    linked (if `output: true`).
+    linked (if `output: true`)
 
 ###### Natural Language
 
 See [`retext-preset-wooorm`][retext-preset] for more info.
 
-*   [English][] parsing;
-*   Two [spaces][] between sentences;
-*   Checks [“indefinite articles”][articles]: “a” or “an”;
-*   Checks [quotes and apostrophes][quotes] (`""` > `“”`);
-*   Checks accidental [repeated words][repeated];
-*   Checks [diacritics][];
-*   Checks [redundant acronyms][ras];
-*   Checks incorrectly placed apostrophes in [contractions][].
+*   [English][] parsing
+*   Two [spaces][] between sentences
+*   Checks [“indefinite articles”][articles]: “a” or “an”
+*   Checks [quotes and apostrophes][quotes] (`""` > `“”`)
+*   Checks accidental [repeated words][repeated]
+*   Checks [diacritics][]
+*   Checks [redundant acronyms][ras]
+*   Checks incorrectly placed apostrophes in [contractions][]
 
 ## License
 
