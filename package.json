@@ -69,7 +69,7 @@
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
   "devDependencies": {
-    "remark-cli": "^3.0.0",
+    "remark-cli": "^4.0.0",
     "xo": "^0.18.1"
   },
   "scripts": {
