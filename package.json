@@ -69,16 +69,24 @@
     "unified": "^6.0.0"
   },
   "devDependencies": {
+    "prettier": "^1.12.1",
     "remark-cli": "^5.0.0",
     "xo": "^0.20.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
-    "lint": "xo",
-    "test": "npm run build-md && npm run lint"
+    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "test": "npm run format"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "rules": {
       "no-var": "off",

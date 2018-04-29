@@ -1,21 +1,29 @@
-'use strict';
+'use strict'
 
-var unified = require('unified');
-var english = require('retext-english');
-var preset = require('retext-preset-wooorm');
+var unified = require('unified')
+var english = require('retext-english')
+var preset = require('retext-preset-wooorm')
 
 exports.settings = {
   bullet: '*',
   fences: true
-};
+}
 
 exports.plugins = [
-  [require('remark-retext'), unified().use(english).use(preset)],
+  [
+    require('remark-retext'),
+    unified()
+      .use(english)
+      .use(preset)
+  ],
   require('remark-preset-lint-recommended'),
   require('remark-comment-config'),
   require('remark-validate-links'),
   [require('remark-lint-blockquote-indentation'), 2],
-  [require('remark-lint-checkbox-character-style'), {checked: 'x', unchecked: ' '}],
+  [
+    require('remark-lint-checkbox-character-style'),
+    {checked: 'x', unchecked: ' '}
+  ],
   require('remark-lint-checkbox-content-indent'),
   [require('remark-lint-code-block-style'), 'fenced'],
   require('remark-lint-definition-case'),
@@ -56,4 +64,4 @@ exports.plugins = [
   [require('remark-lint-unordered-list-marker-style'), '*'],
   [require('remark-toc'), {maxDepth: 3, tight: true}],
   require('remark-github')
-];
+]
