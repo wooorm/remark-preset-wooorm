@@ -69,8 +69,8 @@
     "unified": "^6.0.0"
   },
   "devDependencies": {
-    "remark-cli": "^4.0.0",
-    "xo": "^0.18.1"
+    "remark-cli": "^5.0.0",
+    "xo": "^0.20.0"
   },
   "scripts": {
     "build-md": "remark . -qfo",
@@ -79,7 +79,11 @@
   },
   "xo": {
     "space": true,
-    "esnext": false
+    "esnext": false,
+    "rules": {
+      "no-var": "off",
+      "prefer-arrow-callback": "off"
+    }
   },
   "remarkConfig": {
     "plugins": [
