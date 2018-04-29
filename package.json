@@ -8,6 +8,12 @@
     "preset",
     "wooorm"
   ],
+  "repository": "wooorm/remark-preset-wooorm",
+  "bugs": "https://github.com/wooorm/remark-preset-wooorm/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
   "files": [
     "index.js"
   ],
@@ -62,12 +68,6 @@
     "retext-preset-wooorm": "^1.0.0",
     "unified": "^6.0.0"
   },
-  "repository": "https://github.com/wooorm/remark-preset-wooorm",
-  "bugs": "https://github.com/wooorm/remark-preset-wooorm/issues",
-  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
-  "contributors": [
-    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
-  ],
   "devDependencies": {
     "remark-cli": "^4.0.0",
     "xo": "^0.18.1"
