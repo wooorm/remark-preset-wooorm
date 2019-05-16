@@ -43,8 +43,8 @@ npm test
 *   Extends [`remark-preset-lint-recommended`][lint-recommended],
     and adds a strict code-style (see [`index.js`][index])
 *   Checks [broken local links][validate-links]
-*   Markdown is compiled with asterisk list-item bullets (`*`),
-    and fenced code blocks (note: set `output: true` in your config to
+*   Markdown is compiled with asterisks (`*`) for list-item bullets and
+    emphasis, and fenced code blocks (note: set `output: true` in your config to
     benefit from this)
 *   How remark compiles can be configured inline with [comments][]
 *   `Table of Contents` headers are kept up to date, with a depth of `3`

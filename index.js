@@ -6,6 +6,7 @@ var preset = require('retext-preset-wooorm')
 
 exports.settings = {
   bullet: '*',
+  emphasis: '*',
   fences: true
 }
 
@@ -28,7 +29,7 @@ exports.plugins = [
   [require('remark-lint-code-block-style'), 'fenced'],
   require('remark-lint-definition-case'),
   require('remark-lint-definition-spacing'),
-  [require('remark-lint-emphasis-marker'), '_'],
+  [require('remark-lint-emphasis-marker'), '*'],
   require('remark-lint-fenced-code-flag'),
   [require('remark-lint-fenced-code-marker'), '`'],
   [require('remark-lint-file-extension'), 'md'],
