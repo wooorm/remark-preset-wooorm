@@ -1,4 +1,8 @@
-# remark-preset-wooorm [![Build Status][travis-badge]][travis]
+# remark-preset-wooorm
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 My personal markdown (and prose) style.
 
@@ -67,9 +71,17 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/remark-preset-wooorm.svg
+[build-badge]: https://img.shields.io/travis/wooorm/remark-preset-wooorm.svg
 
-[travis]: https://travis-ci.org/wooorm/remark-preset-wooorm
+[build]: https://travis-ci.org/wooorm/remark-preset-wooorm
+
+[downloads-badge]: https://img.shields.io/npm/dm/remark-preset-wooorm.svg
+
+[downloads]: https://www.npmjs.com/package/remark-preset-wooorm
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/remark-preset-wooorm.svg
+
+[size]: https://bundlephobia.com/result?p=remark-preset-wooorm
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
