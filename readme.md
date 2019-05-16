@@ -75,7 +75,7 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [index]: ./index.js
 
