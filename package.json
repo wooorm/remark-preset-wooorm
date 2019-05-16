@@ -87,11 +87,7 @@
   },
   "xo": {
     "prettier": true,
-    "esnext": false,
-    "rules": {
-      "no-var": "off",
-      "prefer-arrow-callback": "off"
-    }
+    "esnext": false
   },
   "remarkConfig": {
     "plugins": [
