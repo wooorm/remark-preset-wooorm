@@ -73,7 +73,7 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: http://wooorm.com
 
