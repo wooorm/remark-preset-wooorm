@@ -70,8 +70,8 @@
   },
   "devDependencies": {
     "prettier": "^1.12.1",
-    "remark-cli": "^5.0.0",
-    "xo": "^0.20.0"
+    "remark-cli": "^6.0.0",
+    "xo": "^0.24.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
