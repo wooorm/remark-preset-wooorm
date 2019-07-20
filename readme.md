@@ -91,30 +91,30 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 [index]: ./index.js
 
-[lint-recommended]: https://github.com/wooorm/remark-lint/tree/master/packages/remark-preset-lint-recommended
+[lint-recommended]: https://github.com/remarkjs/remark-lint/tree/master/packages/remark-preset-lint-recommended
 
-[validate-links]: https://github.com/wooorm/remark-validate-links
+[validate-links]: https://github.com/remarkjs/remark-validate-links
 
-[github]: https://github.com/wooorm/remark-github
+[github]: https://github.com/remarkjs/remark-github
 
-[comments]: https://github.com/wooorm/remark-comment-config
+[comments]: https://github.com/remarkjs/remark-comment-config
 
 [retext-preset]: https://github.com/wooorm/retext-preset-wooorm
 
-[english]: https://github.com/wooorm/retext/tree/master/packages/retext-english
+[english]: https://github.com/retextjs/retext/tree/master/packages/retext-english
 
-[spaces]: https://github.com/wooorm/retext-sentence-spacing
+[spaces]: https://github.com/retextjs/retext-sentence-spacing
 
-[articles]: https://github.com/wooorm/retext-indefinite-article
+[articles]: https://github.com/retextjs/retext-indefinite-article
 
-[quotes]: https://github.com/wooorm/retext-quotes
+[quotes]: https://github.com/retextjs/retext-quotes
 
-[repeated]: https://github.com/wooorm/retext-repeated-words
+[repeated]: https://github.com/retextjs/retext-repeated-words
 
-[contractions]: https://github.com/wooorm/retext-contractions
+[contractions]: https://github.com/retextjs/retext-contractions
 
-[diacritics]: https://github.com/wooorm/retext-diacritics
+[diacritics]: https://github.com/retextjs/retext-diacritics
 
-[ras]: https://github.com/wooorm/retext-redundant-acronyms
+[ras]: https://github.com/retextjs/retext-redundant-acronyms
 
 [docs]: https://github.com/unifiedjs/unified#preset
