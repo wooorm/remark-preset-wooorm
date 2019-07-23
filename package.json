@@ -33,7 +33,6 @@
     "remark-lint-final-definition": "^1.0.0",
     "remark-lint-first-heading-level": "^1.0.0",
     "remark-lint-heading-style": "^1.0.0",
-    "remark-lint-linebreak-style": "^1.0.3",
     "remark-lint-link-title-style": "^1.0.0",
     "remark-lint-maximum-heading-length": "^1.0.0",
     "remark-lint-maximum-line-length": "^1.0.0",

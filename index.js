@@ -35,7 +35,6 @@ exports.plugins = [
   [require('remark-lint-file-extension'), 'md'],
   require('remark-lint-final-definition'),
   require('remark-lint-first-heading-level'),
-  [require('remark-lint-linebreak-style'), 'unix'],
   [require('remark-lint-heading-style'), 'atx'],
   [require('remark-lint-link-title-style'), '"'],
   [require('remark-lint-maximum-heading-length'), 60],
