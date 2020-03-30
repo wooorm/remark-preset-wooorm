@@ -65,6 +65,9 @@ exports.plugins = [
   require('remark-lint-table-pipe-alignment'),
   require('remark-lint-table-pipes'),
   [require('remark-lint-unordered-list-marker-style'), '*'],
-  [require('remark-toc'), {maxDepth: 3, tight: true}],
+  [
+    require('remark-toc'),
+    {maxDepth: 3, tight: true, heading: 'contents|toc|table[ -]of[ -]contents?'}
+  ],
   require('remark-github')
 ]
