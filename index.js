@@ -7,7 +7,8 @@ var preset = require('retext-preset-wooorm')
 exports.settings = {
   bullet: '*',
   emphasis: '*',
-  fences: true
+  fences: true,
+  ruleSpaces: false
 }
 
 exports.plugins = [
@@ -59,7 +60,7 @@ exports.plugins = [
   require('remark-lint-no-unneeded-full-reference-image'),
   require('remark-lint-no-unneeded-full-reference-link'),
   [require('remark-lint-ordered-list-marker-value'), 'ordered'],
-  [require('remark-lint-rule-style'), '* * *'],
+  [require('remark-lint-rule-style'), '***'],
   [require('remark-lint-strong-marker'), '*'],
   [require('remark-lint-table-cell-padding'), 'padded'],
   require('remark-lint-table-pipe-alignment'),
