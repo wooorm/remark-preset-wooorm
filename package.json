@@ -37,6 +37,7 @@
     "remark-lint-maximum-heading-length": "^2.0.0",
     "remark-lint-maximum-line-length": "^2.0.0",
     "remark-lint-no-consecutive-blank-lines": "^2.0.0",
+    "remark-lint-no-duplicate-defined-urls": "^1.0.0",
     "remark-lint-no-duplicate-definitions": "^2.0.0",
     "remark-lint-no-duplicate-headings-in-section": "^2.0.0",
     "remark-lint-no-emphasis-as-heading": "^2.0.0",

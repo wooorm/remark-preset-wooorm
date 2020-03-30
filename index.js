@@ -36,6 +36,7 @@ exports.plugins = [
   [require('remark-lint-maximum-heading-length'), 60],
   [require('remark-lint-maximum-line-length'), 80],
   require('remark-lint-no-consecutive-blank-lines'),
+  require('remark-lint-no-duplicate-defined-urls'),
   require('remark-lint-no-duplicate-definitions'),
   require('remark-lint-no-duplicate-headings-in-section'),
   require('remark-lint-no-emphasis-as-heading'),
