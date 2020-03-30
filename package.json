@@ -76,9 +76,9 @@
     "unified": "^8.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.0.0",
-    "remark-cli": "^7.0.0",
-    "xo": "^0.24.0"
+    "prettier": "^2.0.0",
+    "remark-cli": "^8.0.0",
+    "xo": "^0.28.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",

@@ -11,12 +11,7 @@ exports.settings = {
 }
 
 exports.plugins = [
-  [
-    require('remark-retext'),
-    unified()
-      .use(english)
-      .use(preset)
-  ],
+  [require('remark-retext'), unified().use(english).use(preset)],
   require('remark-preset-lint-recommended'),
   require('remark-comment-config'),
   require('remark-validate-links'),
