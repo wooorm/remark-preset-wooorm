@@ -79,10 +79,10 @@
   "devDependencies": {
     "prettier": "^2.0.0",
     "remark-cli": "^8.0.0",
-    "xo": "^0.28.0"
+    "xo": "^0.33.0"
   },
   "scripts": {
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run format"
   },
   "prettier": {
