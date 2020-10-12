@@ -71,5 +71,6 @@ exports.plugins = [
     require('remark-toc'),
     {maxDepth: 3, tight: true, heading: 'contents|toc|table[ -]of[ -]contents?'}
   ],
+  require('remark-gfm'),
   require('remark-github')
 ]
