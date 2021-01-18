@@ -71,9 +71,9 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/remark-preset-wooorm.svg
+[build-badge]: https://github.com/wooorm/remark-preset-wooorm/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/remark-preset-wooorm
+[build]: https://github.com/wooorm/remark-preset-wooorm/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/remark-preset-wooorm.svg
 
