@@ -82,8 +82,8 @@
   },
   "devDependencies": {
     "prettier": "^2.0.0",
-    "remark-cli": "^9.0.0",
-    "xo": "^0.37.0"
+    "remark-cli": "^10.0.0",
+    "xo": "^0.39.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
@@ -98,12 +98,11 @@
     "trailingComma": "none"
   },
   "xo": {
-    "prettier": true,
-    "esnext": false
+    "prettier": true
   },
   "remarkConfig": {
     "plugins": [
-      "./"
+      "./index.js"
     ]
   }
 }
