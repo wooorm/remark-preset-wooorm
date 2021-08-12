@@ -1,3 +1,7 @@
+/**
+ * @typedef {import('unified').Preset} Preset
+ */
+
 import {unified} from 'unified'
 import remarkRetext from 'remark-retext'
 import retextEnglish from 'retext-english'
@@ -56,6 +60,7 @@ import remarkToc from 'remark-toc'
 import remarkGfm from 'remark-gfm'
 import remarkGithub from 'remark-github'
 
+/** @type {Preset} */
 const remarkPresetWooorm = {
   settings: {
     bullet: '*',
