@@ -8,19 +8,22 @@ My personal markdown (and prose) style.
 
 [Learn more about presets in unified’s docs][docs].
 
-## Installation
+## Install
 
-[npm][npm-install]:
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
+[npm][]:
 
 ```sh
-npm install remark-cli remark-preset-wooorm --save
+npm install remark-cli remark-preset-wooorm
 ```
 
 Now add the following to your `package.json`:
 
 ```js
   "scripts": {
-    "build-md": "remark ."
+    "build-md": "remark . -qfo"
     "test": "npm run build-md && ..."
   },
   "remarkConfig": {
@@ -30,7 +33,7 @@ Now add the following to your `package.json`:
   },
 ```
 
-From now on, `npm test` also checks markdown.
+From now on, `npm test` also checks and formats markdown.
 
 ```sh
 npm test
@@ -52,7 +55,7 @@ npm test
 *   [GH references][github], like mentions or issue references, are
     linked (if `output: true`)
 
-###### Natural Language
+###### Natural language
 
 See [`retext-preset-wooorm`][retext-preset] for more info.
 
@@ -83,7 +86,7 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 [size]: https://bundlephobia.com/result?p=remark-preset-wooorm
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: license
 
