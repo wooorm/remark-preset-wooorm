@@ -1,4 +1,4 @@
-import unified from 'unified'
+import {unified} from 'unified'
 import remarkRetext from 'remark-retext'
 import retextEnglish from 'retext-english'
 import retextPresetWooorm from 'retext-preset-wooorm'
