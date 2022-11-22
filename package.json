@@ -92,7 +92,8 @@
     "xo": "^0.53.0"
   },
   "scripts": {
-    "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
+    "prepack": "npm run build && npm run format",
+    "build": "tsc --build --clean && tsc --build && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run build && npm run format"
   },
