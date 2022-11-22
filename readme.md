@@ -6,67 +6,136 @@
 
 My personal markdown (and prose) style.
 
-[Learn more about presets in unified’s docs][docs].
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`remarkPresetWooorm`](#remarkpresetwooorm)
+*   [Checks](#checks)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
+
+## What is this?
+
+This is a preset for [remark][] to check markdown.
+It’s used on all the readmes I work on.
+
+## When should I use this?
+
+Feel free to use this.
+But you can also create your own personal style preset.
 
 ## Install
 
-This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
-Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
-npm install remark-cli remark-preset-wooorm
+npm install remark-preset-wooorm
 ```
 
-Now add the following to your `package.json`:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-  "scripts": {
-    "build-md": "remark . -qfo"
-    "test": "npm run build-md && ..."
-  },
-  "remarkConfig": {
-    "plugins": [
-      "preset-wooorm"
-    ]
-  },
+import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@9'
 ```
 
-From now on, `npm test` also checks and formats markdown.
+In browsers with [`esm.sh`][esmsh]:
 
-```sh
-npm test
+```html
+<script type="module">
+  import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@9?bundle'
+</script>
 ```
+
+## Use
+
+```js
+import {remark} from 'remark'
+import remarkPresetWooorm from 'remark-preset-wooorm'
+import {reporter} from 'vfile-reporter'
+
+const file = await remark()
+  .use(remarkPresetWooorm)
+  .process('This *and* _and_ that.')
+
+console.error(reporter(file))
+```
+
+Yields:
+
+```txt
+        1:1  warning  Missing newline character at end of file  final-newline    remark-lint
+   1:7-1:16  warning  Expected `and` once, not twice            and              retext-repeated-words
+  1:12-1:17  warning  Emphasis should use `*` as a marker       emphasis-marker  remark-lint
+
+⚠ 3 warnings
+```
+
+## API
+
+This package exports no identifiers.
+The default export is `remarkPresetWooorm`.
+
+### `remarkPresetWooorm`
+
+Preset to support my personal markdown style.
 
 ## Checks
 
 ###### Markdown
 
-*   Extends [`remark-preset-lint-recommended`][lint-recommended],
+*   extends [`remark-preset-lint-recommended`][lint-recommended],
     and adds a strict code-style (see [`index.js`][index])
-*   Checks [broken local links][validate-links]
-*   Markdown is compiled with asterisks (`*`) for list-item bullets and
+*   checks [broken local links][validate-links]
+*   markdown is compiled with asterisks (`*`) for list-item bullets and
     emphasis, and fenced code blocks (note: set `output: true` in your config to
     benefit from this)
-*   How remark compiles can be configured inline with [comments][]
-*   `Table of Contents` headers are kept up to date, with a depth of `3`
-    (if `output: true`)
-*   [GH references][github], like mentions or issue references, are
-    linked (if `output: true`)
+*   how remark compiles can be configured inline with [comments][]
+*   `Contents` headers are kept up to date, with a depth of `3` (if
+    `output: true`)
+*   [GH references][github], like mentions or issue references, are linked (if
+    `output: true`)
 
 ###### Natural language
 
 See [`retext-preset-wooorm`][retext-preset] for more info.
 
 *   [English][] parsing
-*   Two [spaces][] between sentences
-*   Checks [“indefinite articles”][articles]: “a” or “an”
-*   Checks [quotes and apostrophes][quotes] (`""` > `“”`)
-*   Checks accidental [repeated words][repeated]
-*   Checks [diacritics][]
-*   Checks [redundant acronyms][ras]
-*   Checks incorrectly placed apostrophes in [contractions][]
+*   two [spaces][] between sentences (but: prefer a line break instead!)
+*   checks [“indefinite articles”][articles]: “a” or “an”
+*   checks [quotes and apostrophes][quotes] (`""` > `“”`)
+*   checks accidental [repeated words][repeated]
+*   checks [diacritics][]
+*   checks [redundant acronyms][ras]
+*   checks incorrectly placed apostrophes in [contractions][]
+
+## Types
+
+This package is fully typed with [TypeScript][].
+It exports no additional types.
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 14.14+ and 16.0+.
+It also works in Deno and modern browsers.
+
+## Related
+
+*   [`retext-preset-wooorm`](https://github.com/wooorm/retext-preset-wooorm)
+    — personal markdown style
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -87,6 +156,14 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 [size]: https://bundlephobia.com/result?p=remark-preset-wooorm
 
 [npm]: https://docs.npmjs.com/cli/install
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[esmsh]: https://esm.sh
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
 
 [license]: license
 
@@ -120,4 +197,4 @@ See [`retext-preset-wooorm`][retext-preset] for more info.
 
 [ras]: https://github.com/retextjs/retext-redundant-acronyms
 
-[docs]: https://github.com/unifiedjs/unified#preset
+[remark]: https://github.com/remarkjs/remark
