@@ -8,18 +8,18 @@ My personal markdown (and prose) style.
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`remarkPresetWooorm`](#remarkpresetwooorm)
-*   [Checks](#checks)
-*   [Types](#types)
-*   [Compatibility](#compatibility)
-*   [Related](#related)
-*   [Contribute](#contribute)
-*   [License](#license)
+* [What is this?](#what-is-this)
+* [When should I use this?](#when-should-i-use-this)
+* [Install](#install)
+* [Use](#use)
+* [API](#api)
+  * [`remarkPresetWooorm`](#remarkpresetwooorm)
+* [Checks](#checks)
+* [Types](#types)
+* [Compatibility](#compatibility)
+* [Related](#related)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## What is this?
 
@@ -91,30 +91,30 @@ Preset to support my personal markdown style.
 
 ###### Markdown
 
-*   extends [`remark-preset-lint-recommended`][lint-recommended],
-    and adds a strict code-style (see [`index.js`][index])
-*   checks [broken local links][validate-links]
-*   markdown is compiled with asterisks (`*`) for list-item bullets and
-    emphasis, and fenced code blocks (note: set `output: true` in your config to
-    benefit from this)
-*   how remark compiles can be configured inline with [comments][]
-*   `Contents` headers are kept up to date, with a depth of `3` (if
-    `output: true`)
-*   [GH references][github], like mentions or issue references, are linked (if
-    `output: true`)
+* extends [`remark-preset-lint-recommended`][lint-recommended],
+  and adds a strict code-style (see [`index.js`][index])
+* checks [broken local links][validate-links]
+* markdown is compiled with asterisks (`*`) for list-item bullets and
+  emphasis, and fenced code blocks (note: set `output: true` in your config to
+  benefit from this)
+* how remark compiles can be configured inline with [comments][]
+* `Contents` headers are kept up to date, with a depth of `3` (if
+  `output: true`)
+* [GH references][github], like mentions or issue references, are linked (if
+  `output: true`)
 
 ###### Natural language
 
 See [`retext-preset-wooorm`][retext-preset] for more info.
 
-*   [English][] parsing
-*   two [spaces][] between sentences (but: prefer a line break instead!)
-*   checks [“indefinite articles”][articles]: “a” or “an”
-*   checks [quotes and apostrophes][quotes] (`""` > `“”`)
-*   checks accidental [repeated words][repeated]
-*   checks [diacritics][]
-*   checks [redundant acronyms][ras]
-*   checks incorrectly placed apostrophes in [contractions][]
+* [English][] parsing
+* two [spaces][] between sentences (but: prefer a line break instead!)
+* checks [“indefinite articles”][articles]: “a” or “an”
+* checks [quotes and apostrophes][quotes] (`""` > `“”`)
+* checks accidental [repeated words][repeated]
+* checks [diacritics][]
+* checks [redundant acronyms][ras]
+* checks incorrectly placed apostrophes in [contractions][]
 
 ## Types
 
@@ -129,8 +129,8 @@ It also works in Deno and modern browsers.
 
 ## Related
 
-*   [`retext-preset-wooorm`](https://github.com/wooorm/retext-preset-wooorm)
-    — personal markdown style
+* [`retext-preset-wooorm`](https://github.com/wooorm/retext-preset-wooorm)
+  — personal markdown style
 
 ## Contribute
 

@@ -9,7 +9,6 @@ import remarkRetext from 'remark-retext'
 import retextEnglish from 'retext-english'
 import retextPresetWooorm from 'retext-preset-wooorm'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
-import remarkLintListItemIndent from 'remark-lint-list-item-indent'
 import remarkCommentConfig from 'remark-comment-config'
 import remarkValidateLinks from 'remark-validate-links'
 import remarkLintBlockquoteIndentation from 'remark-lint-blockquote-indentation'
@@ -69,13 +68,11 @@ const remarkPresetWooorm = /** @type {const} */ ({
     bullet: '*',
     emphasis: '*',
     fences: true,
-    ruleSpaces: false,
-    listItemIndent: 'tab'
+    ruleSpaces: false
   },
   plugins: [
     [remarkRetext, unified().use(retextEnglish).use(retextPresetWooorm)],
     remarkPresetLintRecommended,
-    [remarkLintListItemIndent, 'tab'],
     remarkCommentConfig,
     remarkValidateLinks,
     [remarkLintBlockquoteIndentation, 2],
