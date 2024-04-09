@@ -84,7 +84,7 @@ const remarkPresetWooorm = /** @type {const} */ ({
     [remarkLintEmphasisMarker, '*'],
     remarkLintFencedCodeFlag,
     [remarkLintFencedCodeMarker, '`'],
-    [remarkLintFileExtension, 'md'],
+    [remarkLintFileExtension, ['md', 'mdx']],
     remarkLintFinalDefinition,
     remarkLintFirstHeadingLevel,
     [remarkLintHeadingStyle, 'atx'],
