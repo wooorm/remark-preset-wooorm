@@ -4,8 +4,8 @@
   "description": "Personal markdown and prose style",
   "license": "MIT",
   "keywords": [
-    "remark",
     "preset",
+    "remark",
     "wooorm"
   ],
   "repository": "wooorm/remark-preset-wooorm",
@@ -17,7 +17,6 @@
   "sideEffects": false,
   "type": "module",
   "main": "index.js",
-  "types": "index.d.ts",
   "files": [
     "index.d.ts.map",
     "index.d.ts",
@@ -92,21 +91,18 @@
     "xo": "^0.58.0"
   },
   "scripts": {
-    "prepack": "npm run build && npm run format",
     "build": "tsc --build --clean && tsc --build && type-coverage",
-    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
+    "format": "remark . --frail --output --quiet && prettier . --log-level warn --write && xo --fix",
+    "prepack": "npm run build && npm run format",
     "test": "npm run build && npm run format"
   },
   "prettier": {
-    "tabWidth": 2,
-    "useTabs": false,
-    "singleQuote": true,
     "bracketSpacing": false,
+    "singleQuote": true,
     "semi": false,
-    "trailingComma": "none"
-  },
-  "xo": {
-    "prettier": true
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
   },
   "remarkConfig": {
     "plugins": [
@@ -116,7 +112,10 @@
   "typeCoverage": {
     "atLeast": 100,
     "detail": true,
-    "strict": true,
-    "ignoreCatch": true
+    "ignoreCatch": true,
+    "strict": true
+  },
+  "xo": {
+    "prettier": true
   }
 }
