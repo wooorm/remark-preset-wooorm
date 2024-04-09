@@ -62,7 +62,7 @@ import remarkToc from 'remark-toc'
 import remarkGfm from 'remark-gfm'
 import remarkGithub from 'remark-github'
 
-/** @satisfies {Preset} */
+/** @type {Preset} */
 const remarkPresetWooorm = /** @type {const} */ ({
   settings: {
     bullet: '*',
