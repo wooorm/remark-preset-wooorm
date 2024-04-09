@@ -1,3 +1,5 @@
+/// <reference types="remark-stringify" />
+
 /**
  * @typedef {import('unified').Preset} Preset
  */
@@ -7,6 +9,7 @@ import remarkRetext from 'remark-retext'
 import retextEnglish from 'retext-english'
 import retextPresetWooorm from 'retext-preset-wooorm'
 import remarkPresetLintRecommended from 'remark-preset-lint-recommended'
+import remarkLintListItemIndent from 'remark-lint-list-item-indent'
 import remarkCommentConfig from 'remark-comment-config'
 import remarkValidateLinks from 'remark-validate-links'
 import remarkLintBlockquoteIndentation from 'remark-lint-blockquote-indentation'
@@ -60,17 +63,19 @@ import remarkToc from 'remark-toc'
 import remarkGfm from 'remark-gfm'
 import remarkGithub from 'remark-github'
 
-/** @type {Preset} */
-const remarkPresetWooorm = {
+/** @satisfies {Preset} */
+const remarkPresetWooorm = /** @type {const} */ ({
   settings: {
     bullet: '*',
     emphasis: '*',
     fences: true,
-    ruleSpaces: false
+    ruleSpaces: false,
+    listItemIndent: 'tab'
   },
   plugins: [
     [remarkRetext, unified().use(retextEnglish).use(retextPresetWooorm)],
     remarkPresetLintRecommended,
+    [remarkLintListItemIndent, 'tab'],
     remarkCommentConfig,
     remarkValidateLinks,
     [remarkLintBlockquoteIndentation, 2],
@@ -123,14 +128,14 @@ const remarkPresetWooorm = {
     [
       remarkToc,
       {
+        heading: 'contents|table[ -]of[ -]contents?|toc',
         maxDepth: 3,
-        tight: true,
-        heading: 'contents|toc|table[ -]of[ -]contents?'
+        tight: true
       }
     ],
     remarkGfm,
     remarkGithub
   ]
-}
+})
 
 export default remarkPresetWooorm
