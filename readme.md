@@ -43,14 +43,14 @@ npm install remark-preset-wooorm
 In Deno with [`esm.sh`][esm-sh]:
 
 ```js
-import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@9'
+import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@10'
 ```
 
 In browsers with [`esm.sh`][esm-sh]:
 
 ```html
 <script type="module">
-  import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@9?bundle'
+  import remarkPresetWooorm from 'https://esm.sh/remark-preset-wooorm@10?bundle'
 </script>
 ```
 
@@ -130,7 +130,7 @@ This projects is compatible with maintained versions of Node.js.
 When we cut a new major release,
 we drop support for unmaintained versions of Node.
 This means we try to keep the current release line,
-`remark-preset-wooorm@9`,
+`remark-preset-wooorm@10`,
 compatible with Node.js 16.
 
 ## Related
