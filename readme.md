@@ -71,9 +71,9 @@ console.error(reporter(file))
 Yields:
 
 ```txt
-        1:1  warning  Missing newline character at end of file  final-newline    remark-lint
-   1:7-1:16  warning  Expected `and` once, not twice            and              retext-repeated-words
-  1:12-1:17  warning  Emphasis should use `*` as a marker       emphasis-marker  remark-lint
+1:7-1:16  warning Unexpected repeated `and`, remove one occurrence                                     and             retext-repeated-words
+1:12-1:17 warning Unexpected emphasis marker `_`, expected `*`                                         emphasis-marker remark-lint
+1:23      warning Unexpected missing final newline character, expected line feed (`\n`) at end of file final-newline   remark-lint
 
 ⚠ 3 warnings
 ```
