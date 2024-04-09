@@ -69,7 +69,6 @@ const remarkPresetWooorm = {
     ruleSpaces: false
   },
   plugins: [
-    // @ts-expect-error: types of bridges don’t work.
     [remarkRetext, unified().use(retextEnglish).use(retextPresetWooorm)],
     remarkPresetLintRecommended,
     remarkCommentConfig,
