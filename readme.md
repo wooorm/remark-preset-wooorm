@@ -169,9 +169,9 @@ See [How to Contribute to Open Source][contribute].
 
 [author]: https://wooorm.com
 
-[index]: ./index.js
+[index]: lib/index.js
 
-[lint-recommended]: https://github.com/remarkjs/remark-lint/tree/HEAD/packages/remark-preset-lint-recommended
+[lint-recommended]: https://github.com/remarkjs/remark-lint/tree/main/packages/remark-preset-lint-recommended
 
 [validate-links]: https://github.com/remarkjs/remark-validate-links
 
@@ -181,7 +181,7 @@ See [How to Contribute to Open Source][contribute].
 
 [retext-preset]: https://github.com/wooorm/retext-preset-wooorm
 
-[english]: https://github.com/retextjs/retext/tree/HEAD/packages/retext-english
+[english]: https://github.com/retextjs/retext/tree/main/packages/retext-english
 
 [spaces]: https://github.com/retextjs/retext-sentence-spacing
 
