@@ -16,7 +16,7 @@
   ],
   "sideEffects": false,
   "type": "module",
-  "main": "index.js",
+  "exports": "./index.js",
   "files": [
     "lib/",
     "index.d.ts.map",
