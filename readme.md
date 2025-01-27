@@ -70,7 +70,7 @@ console.error(reporter(file))
 
 Yields:
 
-```txt
+```text
 1:7-1:16  warning Unexpected repeated `and`, remove one occurrence                                     and             retext-repeated-words
 1:12-1:17 warning Unexpected emphasis marker `_`, expected `*`                                         emphasis-marker remark-lint
 1:23      warning Unexpected missing final newline character, expected line feed (`\n`) at end of file final-newline   remark-lint
@@ -135,7 +135,7 @@ compatible with Node.js 16.
 
 ## Related
 
-* [`retext-preset-wooorm`](https://github.com/wooorm/retext-preset-wooorm)
+* [`retext-preset-wooorm`][github-retext-preset-wooorm]
   — personal markdown style
 
 ## Contribute
@@ -162,8 +162,6 @@ See [How to Contribute to Open Source][open-source-guide-contribute].
 [badge-size-image]: https://img.shields.io/bundlejs/size/remark-preset-wooorm
 
 [badge-size-url]: https://bundlejs.com/?q=remark-preset-wooorm
-
-[npm-install]: https://docs.npmjs.com/cli/install
 
 [esm-sh]: https://esm.sh
 
@@ -200,6 +198,8 @@ See [How to Contribute to Open Source][open-source-guide-contribute].
 [github-retext-repeated-words]: https://github.com/retextjs/retext-repeated-words
 
 [github-retext-sentence-spacing]: https://github.com/retextjs/retext-sentence-spacing
+
+[npm-install]: https://docs.npmjs.com/cli/install
 
 [open-source-guide-contribute]: https://opensource.guide/how-to-contribute/
 
