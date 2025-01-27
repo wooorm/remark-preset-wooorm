@@ -1,6 +1,7 @@
-node_modules/
 *.d.ts
-*.d.ts.map
 *.log
+*.map
+*.tsbuildinfo
 .DS_Store
+node_modules/
 yarn.lock
